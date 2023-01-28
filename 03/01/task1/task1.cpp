@@ -78,12 +78,12 @@ int main()
 	{
 		for (;;)
 		{
-			std::cout << "Введите num1:" << std::endl;
-			std::cin >> num1_1;
+			cout << "Введите num1:" << endl;
+			cin >> num1_1;
 
 			if (!calculator.set_num1(num1_1))
 			{
-				std::cout << "Неверный ввод!" << std::endl;
+				cout << "Неверный ввод!" << endl;
 				continue;
 			}
 
@@ -95,14 +95,14 @@ int main()
 
 		for (;;)
 		{
-			std::cout << "Введите num2:" << std::endl;
-			std::cin >> num2_2;
+			cout << "Введите num2:" << endl;
+			cin >> num2_2;
 
 			if (!calculator.set_num2(num2_2))
 			{
-				std::cout << "Неверный ввод!" << std::endl;
+				cout << "Неверный ввод!" << endl;
 				continue;
-			} std::cout << std::endl;
+			} cout << endl;
 			if (calculator.set_num2(num2_2))
 			{
 				break;
