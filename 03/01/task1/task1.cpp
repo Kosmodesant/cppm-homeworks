@@ -11,8 +11,6 @@ public:
 
 	//метод должен возвращать результат сложения num1 и num2
 	double add() {
-
-		double sum = num1 + num2;
 		cout << "num1 + num2 = " << num1 + num2 << endl;
 		return 0;
 	};
@@ -44,7 +42,8 @@ public:
 		cout << "num2 / num1 = " << num2 / num1 << endl;
 		return 0;
 	};
-	//метод должен установить значение поля num1 равное значению аргумента num1 в случае, если значение аргумента не равно 0. Возвращает true, если установка произошла успешно, в обратном случае false
+	//метод должен установить значение поля num1 равное значению аргумента num1 в случае, 
+	//если значение аргумента не равно 0. Возвращает true, если установка произошла успешно, в обратном случае false
 	bool set_num1(double num1) {
 
 		if (num1 != 0)
@@ -54,7 +53,8 @@ public:
 		return (num1 == 0) ? false : true;
 
 	};
-	//метод должен установить значение поля num2 равное значению аргумента num2 в случае, если значение аргумента не равно 0. Возвращает true, если установка произошла успешно, в обратном случае false
+	//метод должен установить значение поля num2 равное значению аргумента num2 в случае, 
+	//если значение аргумента не равно 0. Возвращает true, если установка произошла успешно, в обратном случае false
 	bool set_num2(double num2) {
 		if (num2 != 0)
 		{
@@ -69,21 +69,51 @@ int main()
 {
 	setlocale(LC_ALL, "Rus");
 
-	Calculator r;
+	double num1_1;
+	double num2_2;
 
-	cout << "Введите num1: " << endl;
-	cin >> r.num1;
+	Calculator calculator;
 
-	cout << "Введите num2: " << endl;
-	cin >> r.num2;
+	for (;;)
+	{
+		for (;;)
+		{
+			std::cout << "Введите num1:" << std::endl;
+			std::cin >> num1_1;
 
-	r.add();
-	r.multiply();
-	r.subtract_1_2();
-	r.subtract_2_1();
-	r.divide_1_2();
-	r.divide_2_1();
+			if (!calculator.set_num1(num1_1))
+			{
+				std::cout << "Неверный ввод!" << std::endl;
+				continue;
+			}
 
-	//cout << "Неверный ввод!" << endl;
+			if (calculator.set_num1(num1_1))
+			{
+				break;
+			}
+		}
+
+		for (;;)
+		{
+			std::cout << "Введите num2:" << std::endl;
+			std::cin >> num2_2;
+
+			if (!calculator.set_num2(num2_2))
+			{
+				std::cout << "Неверный ввод!" << std::endl;
+				continue;
+			} std::cout << std::endl;
+			if (calculator.set_num2(num2_2))
+			{
+				break;
+			}
+		}
+		calculator.add();
+		calculator.multiply();
+		calculator.subtract_1_2();
+		calculator.subtract_2_1();
+		calculator.divide_1_2();
+		calculator.divide_2_1();
+	}
 }
 
