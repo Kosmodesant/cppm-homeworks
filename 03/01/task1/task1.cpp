@@ -83,7 +83,7 @@ int main()
 				continue;
 			}
 
-			if (calculator.set_num1(num1_1))
+			else
 			{
 				break;
 			}
@@ -98,8 +98,8 @@ int main()
 			{
 				cout << "Неверный ввод!" << endl;
 				continue;
-			} cout << endl;
-			if (calculator.set_num2(num2_2))
+			}
+			else
 			{
 				break;
 			}
