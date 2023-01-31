@@ -34,26 +34,26 @@ public:
 		return this->city;
 	}
 
-	void sort_Address_array(Address* Address_array, int size)
-	{
-		for (int i = 0; i < size - 1; i++)
-		{
-			for (int j = i; j > 0; j--)
-			{
-				if (Address_array[j].read_city() > Address_array[j + 1].read_city())
-				{
-					swap(Address_array[j], Address_array[j + 1]);
-				}
-			}
-		}
-	}
-
 private:
 	string city;
 	string street;
 	int house;
 	int flat;
 };
+
+void sort_Address_array(Address* Address_array, int size)
+{
+	for (int i = 0; i < size - 1; i++)
+	{
+		for (int j = i; j > 0; j--)
+		{
+			if (Address_array[j].read_city() > Address_array[j + 1].read_city())
+			{
+				swap(Address_array[j], Address_array[j + 1]);
+			}
+		}
+	}
+}
 
 int main()
 {
@@ -69,7 +69,7 @@ int main()
 
 	fin >> string_buf;
 	fout << string_buf << "\n";
-	size = 5;
+	size = stoi(string_buf);
 
 	Address* Address_array = new Address[size];
 
@@ -79,7 +79,7 @@ int main()
 		Address_array[i] = { city, street, house, flat };
 	}
 
-	Address_array->sort_Address_array(Address_array, size);
+	sort_Address_array(Address_array, size);
 
 	for (int i = 0; i < size; i++)
 	{
@@ -91,4 +91,3 @@ int main()
 	fin.close();
 	fout.close();
 }
-
