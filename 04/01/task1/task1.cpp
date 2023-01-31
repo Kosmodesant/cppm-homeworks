@@ -47,13 +47,13 @@ int main()
 	string street = "none";
 	int house = 0;
 	int flat = 0;
+	int size = 0;
+	string string_buf;
 
-	int size = 3; //количество строк
-	string adresa;
+	fin >> string_buf;
+	fout << string_buf << "\n";
 
-	fin >> adresa;
-	fout << adresa << "\n";
-
+	size = stoi(string_buf);
 	Adress* Adress_array = new Adress[size];
 
 	for (int i = 0; i < size; i++)
