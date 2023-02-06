@@ -1,6 +1,6 @@
 ﻿
 #include <iostream>
-#include "Header.h"
+#include "counter.h"
 
 using namespace std;
 
