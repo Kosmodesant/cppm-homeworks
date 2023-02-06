@@ -1,10 +1,10 @@
 #pragma once
 #include <iostream>
 
-class Ñounter
+class Counter
 {
 public:
-	Ñounter();
+	Counter();
 	void set_counter(int x);
 	void plus_counter();
 	void minus_counter();
