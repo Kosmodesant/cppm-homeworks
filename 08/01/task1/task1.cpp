@@ -8,6 +8,7 @@ int function(string str, int forbidden_length) {
 	return str.length();
 }
 
+
 int main()
 {
 	setlocale(LC_ALL, "Russian");
@@ -17,16 +18,20 @@ int main()
 	cout << "Введите запретную длину : \n";
 	cin >> forbidden_length;
 
-	try
-	{
-		std::cout << "Введите слово: ";
-		std::cin >> str;
+	while (true) {
+		try
+		{
+			cout << "Введите слово: ";
+			cin >> str;
 
-		std::cout << "Длина слова " << '"' << str << '"' << " равна " << function(str, forbidden_length);
+			cout << "Длина слова " << '"' << str << '"' << " равна " << function(str, forbidden_length) << endl;
+		}
+		catch (const exception& err)
+		{
+			cout << err.what() << endl;
+			break;
+		}
 	}
-	catch (const exception& err)
-	{
-		cout << err.what() << endl;
-	}
+
 }
 
