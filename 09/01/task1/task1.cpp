@@ -68,7 +68,7 @@ public:
 		denominator_ = denominator;
 	};
 
-	bool operator==( Fraction& other)
+	bool operator==(const Fraction& other) const
 	{
 		return numerator_ * other.denominator_ == other.numerator_ * denominator_;
 	};
