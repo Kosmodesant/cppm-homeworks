@@ -1,9 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <windows.h>
-#include <iostream>
-#include <windows.h>
-#include <locale.h>
+
 #include "LeaverDynamicLibrary.h"
 
 using namespace std;
@@ -14,6 +12,7 @@ int main()
 	SetConsoleOutputCP(1251);
 
 	string name;
+
 	Leaver leaver;
 
 	cout << "¬ведите им€: " << name << endl;
