@@ -1,10 +1,8 @@
 #include <iostream>
-#include <stdlib.h>
 #include <windows.h>
-
 #include "LeaverDynamicLibrary.h"
 
-using namespace std;
+// total_hours_wasted_here = 0.5 :)
 
 int main()
 {
