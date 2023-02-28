@@ -18,6 +18,30 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Equilateral_triangle.cpp" />
+    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="Isosceles_triangle.cpp" />
+    <ClCompile Include="Parallelogram.cpp" />
+    <ClCompile Include="Quadrangle.cpp" />
+    <ClCompile Include="Rectangl.cpp" />
+    <ClCompile Include="Rectangular_triangle.cpp" />
+    <ClCompile Include="Rhomb.cpp" />
+    <ClCompile Include="Square.cpp" />
+    <ClCompile Include="Triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Equilateral_triangle.h" />
+    <ClInclude Include="Figure.h" />
+    <ClInclude Include="Isosceles_triangle.h" />
+    <ClInclude Include="Parallelogram.h" />
+    <ClInclude Include="Quadrangle.h" />
+    <ClInclude Include="Rectangl.h" />
+    <ClInclude Include="Rectangular_triangle.h" />
+    <ClInclude Include="Rhomb.h" />
+    <ClInclude Include="Square.h" />
+    <ClInclude Include="Triangle.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,30 +162,6 @@
       <EnableUAC>false</EnableUAC>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\06\03\task3\Equilateral_triangle.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Figure.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Isosceles_triangle.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Parallelogram.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Quadrangle.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Rectangl.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Rectangular_triangle.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Rhomb.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Square.cpp" />
-    <ClCompile Include="..\..\..\..\06\03\task3\Triangle.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\06\03\task3\Equilateral_triangle.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Figure.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Isosceles_triangle.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Parallelogram.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Quadrangle.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Rectangl.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Rectangular_triangle.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Rhomb.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Square.h" />
-    <ClInclude Include="..\..\..\..\06\03\task3\Triangle.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

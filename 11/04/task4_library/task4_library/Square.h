@@ -2,8 +2,8 @@
 #include "Rectangl.h"
 
 
-class Square : public Rectangl
-{
-public:
-	Square(int a);
-};
+	class Square : public Rectangl
+	{
+	public:
+		GEOMETRYLIBRARY_API Square(int a);
+	};

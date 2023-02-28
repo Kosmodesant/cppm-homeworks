@@ -1,4 +1,14 @@
 #pragma once
+
+// // I've only tried a few simple spells myself, and they've all worked for me
+// AVADA KEDAVRA !!!!
+#ifdef GEOMETRY_EXPORTS
+#define GEOMETRYLIBRARY_API __declspec(dllexport)
+#else
+#define GEOMETRYLIBRARY_API __declspec(dllimport)
+#endif
+
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -6,16 +16,15 @@ using namespace std;
 class Figure
 {
 public:
-	Figure();
-	void print_info();
+	GEOMETRYLIBRARY_API Figure();
+	GEOMETRYLIBRARY_API void print_info();
 
 protected:
-	Figure(int sides_count, string name);
-	virtual string get_sides();
-	virtual string get_corn();
-	int get_sides_count();
+	GEOMETRYLIBRARY_API Figure(int sides_count, string name);
+	GEOMETRYLIBRARY_API virtual string get_sides();
+	GEOMETRYLIBRARY_API virtual string get_corn();
+	GEOMETRYLIBRARY_API int get_sides_count();
 	int sides_count;
 	string name;
 };
-
 

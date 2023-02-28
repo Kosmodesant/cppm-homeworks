@@ -2,6 +2,7 @@
 #include <string>
 using namespace std;
 
+
 Figure::Figure() :Figure(0, "Фигура:") {};
 
 void Figure::print_info()
@@ -16,18 +17,18 @@ Figure::Figure(int sides_count, string name)
 };
 
 
-
 string Figure::get_sides()
 {
 	return " ";
 };
 
-string Figure::get_corn()
+string /*Kosmodesant::*/Figure::get_corn()
 {
 	return " ";
 };
 
-int Figure::get_sides_count()
+int /*Kosmodesant::*/Figure::get_sides_count()
 {
 	return sides_count;
 };
+
