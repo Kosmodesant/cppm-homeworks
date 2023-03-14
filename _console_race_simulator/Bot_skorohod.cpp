@@ -1,6 +1,19 @@
-﻿#include "Bot_skorohod.h"
+﻿//⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⡀⢀⣀⣤⣤⣤⣄⡤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠈⣯⢉⣿⣿⡟⢸⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⡎⣿⣿⡇⢸⢿⡿⣣⣄⠀⠀⠀⣱⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⣷⡿⡛⣅⣸⣷⣷⣿⣿⣿⣿⡿⠏⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣶⣾⠀⠈⢻⣄⡀⠈⢿⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⣧⣄⣠⣿⣿⣷⡿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠛⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀       ТЯГИ ЛЮТЫЕ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-Bot_skorohod::Bot_skorohod() :Bot_skorohod("verblud", 6, 60) {}
+
+#include "Bot_skorohod.h"
+
+Bot_skorohod::Bot_skorohod() :Bot_skorohod("bot_skorohod", 6, 60) {}
 
 Bot_skorohod::Bot_skorohod(const std::string& name, const int speed, const int stamina) :Earth_Transport(name, speed, stamina)
 {
@@ -29,7 +42,6 @@ int Bot_skorohod::metod_relax(const int distance, const int times) //метод 
         break;
     case 3: time_relax = (buf - 1) * 5 + 10; // если отдыха было более 1 раза 
         break;
-        //case 5: throw {};
     }
     return time_relax;
 }

@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "Earth_Transport.h"
+
 class Verblud: protected Earth_Transport
 {
 public:

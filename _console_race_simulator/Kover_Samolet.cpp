@@ -1,4 +1,16 @@
-﻿#include "Kover_Samolet.h"
+﻿//
+//⣀⣀⣀⠀⠀⠀⠀⢀⣀⣠⣤⣶⣶⣿⣿⣿⣿⣶⣶⣾⣲⣄⠀⠀⠀⠀⠀⠀
+//⠀⠀⠁⠹⣿⣿⣿⣿⣿⢿⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⣿⣏⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠀⠀⠀
+//⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠉⠉⠉⠀⠀⠀⠀⠀⠀⠈⠑⠆⡀
+//⠀⠀⠀⢠⣿⢻⣿⣿⣿⣿⠿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁
+//⠀⠀⠀⡘⠳⠾⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+// ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//         АРАБСКАЯ НОЧЬ
+
+
+#include "Kover_Samolet.h"
 
 Kover_Samolet::Kover_Samolet() : Kover_Samolet("kover_samolet", 10) {}
 
@@ -30,7 +42,6 @@ double Kover_Samolet::metod_sokrashenia(const int distance)
         break;
     case 4: short_distance = 0.95; // если больше  10000
         break;
-        //case 5: throw {};
     }
     return distance * short_distance;
 }

@@ -1,4 +1,47 @@
-﻿#include <iostream>
+﻿//───────────────██
+//─────────────░██▓█
+//────────────▓██▓▓█░
+//───────────██▒─▒▓▓▓
+//──────────█▓▒▒░─▒▓█
+//────────░██▓▒▒▓▒░▒▓█
+//───────▒█▒──▒▓▓▓▓▒▓█░
+//──────▓█▓▒──▒▒░░▒▓▓██
+//─────██▓▓▓▓▓█▒───▓▓▓█░
+//────██▒▓▓█▒───▒███──▓█
+//──░████▓░█▒▒█───▓█──▓█░
+//─▒██▓░─▓▓▒▒▓█▒───▓──░██
+//▓█▓▓▒░▒▓█▓▓██▓██▓███▒▒█▒
+//█▓▓▓▓███████▓███████▓▒▒█
+//▓██▓███▓░░░░░▓░▓█▒██████▒
+//▒▒▓▓▒▒░▒▓░░░░░░░░░▒▒▒▓███
+//▓█▓░░░░─▓▓██▒▓▒▒░░░░░░░▒█▓
+//▒▒▓▒░░░─▓████▒░▒▒▒▒▒░▒░░░██
+//▒▒▓██▓▓▒░─░───░▓▓▓░▓███▒▒▓█
+//▓░░▒▒▒─░──────▒▓░▓▒─███▒─▒█▒
+//█▒────────░▒░──░▓─░───░░▒▓█▒
+//███░───────█───▒──░▒──░▒▒██▒
+//─▒███░─────████████░───░▒▓█▓─────────░▓█
+//────▒█░──────────────────▒██─────░▓███▒
+//█▒────█▒──────────────░▒▓▓█───▓███▒
+//▓██─────░░─────────░░▓████████▒
+//████▒─────░▒░░░─────███████░
+//▓▓████─────────░▓██████▓▓█▓f
+//█▓▓───────░▓████▓██▓▓▒▒▒▓█░
+//▓░───░▒█████▒─────▓█▓▓▒▓▓▓█▒
+//─░█████▒───────────▒▓▓▓▒▒▓██▒
+//──█░────────────────█▓▓▓▒▒▓▓█░
+//▓░──────────────────█▓▓▓█▒▓▓██
+//───────────────────▒█████▓▓▓▓█▒
+//──────────────────░──░██▓▓▓▓██▓
+//─────────────────▒▒░────▒█▓▓▓█░
+//───────────────────────────────
+//████────█─█─█───█─█───██─██
+//█──██───█████───█─█────███
+//████─────███────███─────█
+//█──██───█████─────█────███
+//████────█─█─█───███───██─██
+
+#include <iostream>
 #include <string>
 #include <stdlib.h>
 
@@ -131,7 +174,7 @@ using namespace std;
 			{
 				if (count > 1) { return true; }
 				else { cerr << " Недостаточно транспортных средств для начала гонки! \n"; continue; }
-			} // выход из цикла если условин норм 
+			} // выход из цикла если условие норм 
 
 
 			if (buf == 1)  //добавить провверку на тип гонки
@@ -144,12 +187,12 @@ using namespace std;
 				if (transports[0][2] != "1")
 				{
 					Bot_skorohod botinok; transports[0][1] = to_string(botinok.metod_finish(distance)); buf_string = buf_string + " " + transports[0][0]; transports[0][2] = "1";
-					cout << transports[0][0] << " успешно зарегистрированны! \n "; count += 1;
+					cout << transports[0][0] << " успешно зарегистрированы! \n "; count += 1;
 					continue;
 				}
 				else
 				{
-					cerr << transports[0][0] << " Уже зарегистрирован!! \n";
+					cerr << transports[0][0] << " Уже зарегистрированы! \n";
 					continue;
 				}
 			}
@@ -164,7 +207,7 @@ using namespace std;
 				if (transports[1][2] != "1")
 				{
 					Metla metla;  transports[1][1] = to_string(metla.metod_finish(distance)); buf_string = buf_string + " " + transports[1][0]; transports[1][2] = "1";
-					cout << transports[1][0] << " успешно зарегистрированны! \n "; count += 1;
+					cout << transports[1][0] << " успешно зарегистрирована! \n "; count += 1;
 					continue;
 				}
 				else
@@ -185,12 +228,13 @@ using namespace std;
 				if (transports[2][2] != "1")
 				{
 					Verblud verblud;  transports[2][1] = to_string(verblud.metod_finish(distance)); buf_string = buf_string + " " + transports[2][0]; transports[2][2] = "1";
-					cout << transports[2][0] << " Успешно зарегистрированны! \n "; count += 1;
+					cout << transports[2][0] << " успешно зарегистрирован! \n "; count += 1;
 					continue;
 				}
 				else
 				{
 					cerr << transports[2][0] << " Уже зарегистрирован! \n";
+					continue;
 				}
 			}
 
@@ -205,12 +249,13 @@ using namespace std;
 				if (transports[3][2] != "1")
 				{
 					Kentavr kentavr;  transports[3][1] = to_string(kentavr.metod_finish(distance)); buf_string = buf_string + " " + transports[3][0]; transports[3][2] = "1";
-					cout << transports[3][0] << " Успешно зарегистрированы! \n "; count += 1;
+					cout << transports[3][0] << " успешно зарегистрирован! \n "; count += 1;
 					continue;
 				}
 				else
 				{
 					cerr << transports[3][0] << " Уже зарегистрирован! \n";
+					continue;
 				}
 			}
 
@@ -224,7 +269,7 @@ using namespace std;
 				if (transports[4][2] != "1")
 				{
 					Orel orel;  transports[4][1] = to_string(orel.metod_finish(distance)); buf_string = buf_string + " " + transports[4][0]; transports[4][2] = "1";
-					cout << transports[4][0] << " Успешно зарегистрированы! \n "; count += 1;
+					cout << transports[4][0] << " успешно зарегистрирован! \n "; count += 1;
 					continue;
 				}
 				else
@@ -245,12 +290,13 @@ using namespace std;
 				if (transports[5][2] != "1")
 				{
 					Verblud_fast verblud_fast;  transports[5][1] = to_string(verblud_fast.metod_finish(distance)); buf_string = buf_string + " " + transports[5][0]; transports[5][2] = "1";
-					cout << transports[5][0] << " Успешно зарегистрированы! \n "; count += 1;
+					cout << transports[5][0] << " успешно зарегистрирован! \n "; count += 1;
 					continue;
 				}
 				else
 				{
-					cerr << transports[5][0] << " Уже зарегистрирован!! \n";
+					cerr << transports[5][0] << " Уже зарегистрирован! \n";
+					continue;
 				}
 			}
 
@@ -264,12 +310,12 @@ using namespace std;
 				if (transports[6][2] != "1")
 				{
 					Kover_Samolet kover_samolet;  transports[6][1] = to_string(kover_samolet.metod_finish(distance)); buf_string = buf_string + " " + transports[6][0]; transports[6][2] = "1";
-					cout << transports[1][0] << " успешно зарегистрированы! \n "; count += 1;
+					cout << transports[6][0] << " успешно зарегистрирован! \n "; count += 1;
 					continue;
 				}
 				else
 				{
-					cerr << transports[6][0] << " Уже зарегистрирован!! \n";
+					cerr << transports[6][0] << " Уже зарегистрирован! \n";
 					continue;
 				}
 			}
@@ -314,15 +360,32 @@ using namespace std;
 
 	bool Menu::menu_results(string** transports, int rows) const
 	{
-
-
 		cout << "Результаты гонки: \n";
 
+		// сортирует только результаты, need help !!!
+		//
+		//┊☆┊┊┊┊☆┊┊┊┊☆┊┊┊┊
+		//	┈┈┈┈╭━━━━━━╮┊☆┊┊
+		//	┈┈┈┈┃╳╳╳▕╲▂▂╱▏┊┊
+		//	┈┈┈┈┃╳╳╳▕▏▍▕▍▏┊☆
+		//	┈┈╰━┫╳╳╳▕▏╰┻╯▏┊┊
+		//	┈┈┈┈┃╳╳╳╳╲▂▂╱┊┊┊
+		//	┊┊☆┊╰┳┳━━┳┳╯┊┊☆┊
+		// 
+		// ПУЗЫРЬ ЛОПНУЛ
+		for (int i = 0; i < rows - 1; i++) {
+			for (int j = rows - 1; j > i; j--) {
+				if (transports[j][1] < transports[j - 1][1]) {
+					auto temp = transports[j][1];
+					transports[j][1] = transports[j - 1][1];
+					transports[j - 1][1] = temp;
+				}
+			}
+		}
 
-
-		for (int i = 0; i < rows - 1; i++)
+		for (int i = 0; i < rows; i++)
 		{
-			if (transports[i][2] == "1") { cout << transports[i][0] << "Время: " << transports[i][1] << endl; }
+			if (transports[i][2] == "1") { cout << transports[i][0] << ". Время: " << transports[i][1] << endl; }
 		}
 		cout << endl;
 		return true;
@@ -345,4 +408,4 @@ using namespace std;
 			}
 			return buf;
 		}
-	};
+	}; 
